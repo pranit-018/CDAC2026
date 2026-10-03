@@ -1,0 +1,41 @@
+.box{
+    border: 5px solid;
+    width: 350px;
+    padding: 8px;
+    border-radius: 10px;
+    /* margin: auto; */
+    position: relative;
+    top: 100px;
+    left: 500px;
+    background-color: thistle;
+    box-shadow: 7px 5px 12px palevioletred;
+}
+.box label
+{
+    font-size: 22px;
+    text-align: center;
+}
+.box input
+{
+    display: block;
+    height: 20px;
+    font-size: 18px;
+    box-shadow: 5px 5px 8px;
+    margin-bottom: 8px;
+    border-radius: 6px;
+   
+}
+
+.box button{
+    padding: 5px;
+    font-size: 16px;
+    border: 2px solid lightcoral;
+    border-radius: 10px;
+    margin: 5px;
+    background-color: lightseagreen;
+    font-weight: 900;
+}
+.box h3{
+    
+    display: inline ;
+}

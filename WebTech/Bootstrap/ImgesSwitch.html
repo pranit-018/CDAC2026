@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .block{
+            border: 5px solid black;
+            width: 320px;
+            text-align: center;
+            padding: 7px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="block">
+        <img id="img1" src="../Assets/dosa.jpeg" alt="Dosa" height="300px" width="300px"> <br>
+        <h2 id="h1">Dosa</h2>
+        <button type="button" onclick="changeImg('../Assets/samosa.jpeg','Samosa')">Samosa Image</button>
+        <button type="button" onclick="changeImg('../Assets/pizza.jpg','Pizza')">Pizza Image</button>
+        <button type="button" onclick="changeImg('../Assets/momos.jpg','Momos')">Momos Image</button>
+
+    </div>
+
+
+
+
+    <script>
+
+        let cond = false;
+        function changeImg(imgpath,imgName)
+        {
+            document.getElementById("img1").src=imgpath
+             document.getElementById("h1").innerHTML=imgName
+
+        }
+
+
+
+    </script>
+</body>
+</html>

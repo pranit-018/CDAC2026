@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .outer{
+
+            border: 4px solid;
+            width: 70px;
+            height: 229px;
+            background-color: rgb(189, 186, 186);
+            margin: auto;
+            margin-top: 80px;
+            padding: 10px;
+            border-radius: 6%
+        }
+        .light{
+            border: 3px solid rgba(40, 37, 37, 0.898);
+            width: 50px;
+            height: 50px;
+            margin: auto;
+            border-radius: 50%;
+            margin-top: 10px;
+
+        }
+        .pol{
+            border: 3px solid;
+            width: 8px;
+            margin: auto;
+            height: 400px;
+            background-color: black;
+        }
+        .stand{
+            border: 4px solid;
+            width: 121px;
+            margin: auto;
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="light" id="red"></div>
+        <div class="light" id="yel"></div>
+        <div class="light" id="grn"></div>
+    </div>
+    <div class="pol"></div>
+    <div class="stand"></div>
+    <script>
+        function off() {
+            document.getElementById("red").style.backgroundColor=""
+            document.getElementById("yel").style.backgroundColor=""
+            document.getElementById("grn").style.backgroundColor=""
+        }
+
+        function on(){
+            off();
+            document.getElementById("red").style.backgroundColor="red";
+            setTimeout(() => {
+                off();
+                document.getElementById("yel").style.backgroundColor="yellow";
+                setTimeout(() => {
+                    off();
+                    document.getElementById("grn").style.backgroundColor="green";
+                    setTimeout(on,3000);
+                }, 3000);
+            }, 3000);
+        }
+        on();
+    </script>
+</body>
+</html>

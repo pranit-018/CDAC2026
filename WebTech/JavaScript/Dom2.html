@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="" style="border: 10px solid lightblue;">
+        <thead>
+            <tr>
+                <th>ID: </th>
+                <th>Name: </th>
+                <th>Post: </th>
+                <th>Salary: </th>
+            </tr>
+        </thead>
+        <tbody id="empD">
+
+        </tbody>
+
+    </table>
+        
+
+    <script>
+        let emp = [
+            {id:1,name:"Sanket",post:"HR",salary:68000},
+            {id:2,name:"Aniket",post:"developer",salary:75000},
+            {id:3,name:"Shubham",post:"developer",salary:75000},
+            {id:4,name:"Pratik",post:"developer",salary:85000},
+            {id:5,name:"Shivam",post:"jr. developer",salary:55000},
+        ];
+
+        let newEmp = document.getElementById("empD")
+            emp.forEach(
+                empDetails=>{
+                    let newEmp= document.createElement("tr");
+                    newEmp.innerHTML=`<td>${empDetails.id}</td> <td>${empDetails.name}</td> <td>${empDetails.post}</td> <td>${empDetails.salary}</td>`;
+                    empD.appendChild(newEmp);
+                }
+            )
+    </script>
+</body>
+</html>

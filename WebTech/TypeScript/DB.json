@@ -1,0 +1,14 @@
+{
+    "product":[
+            {"id":1,"name":"Laptop","price":90000,"company":"ASUS" , "Qty":20},
+            {"id":2,"name":"mouse","price":2000,"company":"DELL" , "Qty":200},
+            {"id":3,"name":"Laptop","price":5000,"company":"ASUS" , "Qty":100},
+            {"id":4,"name":"iphone18","price":120000,"company":"Apple" , "Qty":10}
+
+    ],
+    "users":[
+        {"id":1,"uid":"admin","upass":"adim@1234"},
+        {"id":1,"uid":"hero","upass":"hero@1234"},
+        {"id":1,"uid":"king","upass":"king@1234"}
+    ]
+}

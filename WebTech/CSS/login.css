@@ -1,0 +1,87 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+}
+.logo{
+    height: 100px;
+    width: 100px;
+    border: 2px solid rgb(138, 224, 138);
+    border-radius: 50%;
+    box-shadow: 8px 2px 5px;
+    margin: 5px;
+}
+
+.mytitle{
+    font-size: 30px;
+    padding: 10px;
+    font-weight: 700;
+    color:  rgb(144, 205, 220);
+    letter-spacing: 1px;
+    text-shadow: 3px 3px 2px black;
+}
+
+header{
+    border-bottom: 3px solid rgb(61, 156, 166);
+    background-color: rgb(76, 135, 164);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#second
+{
+    margin-top: 10px;
+    display: flex;
+
+}
+.scroll{
+    align-content: center;
+    border: 3px solid black;
+    width:25%
+
+}
+
+.list{
+   
+    border:3px solid brown;
+    width: 73%;
+    float: right;
+}
+.listimg
+{
+    margin-top: 35px;
+    margin-left: 25px;
+    width: 30%;
+    height: 35%;
+    border-radius: 50%;
+}
+.scr1{
+    margin-left: 20%;
+    margin: 35px;
+    width: 70%;
+    border-radius: 50%;
+
+}
+.form{
+    text-align: center;
+    width: 49%;
+    border: 2px solid black;
+
+}
+
+.map
+{
+    width: 49%;
+    border: 2px solid black;
+    
+}
+#third
+{
+    margin-top: 30px;
+    display: flex;
+}
+.mp{
+    margin: 70px;
+    
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="parent">
+        <p id="child1">Child 1</p>
+        <p id="child2">Child 2</p>
+        <p id="child3">Child 3</p>
+
+        <hr>
+    </div>
+    <ul id="ullist">
+        <li>Apple</li>
+        <li>Mango</li>
+    </ul>
+
+    <hr><br>
+    <ul id="fruit">
+
+    </ul>
+
+    <script>
+            let parent = document.getElementById("parent");
+            console.log(parent);
+            
+            // create new element
+           let newPara = document.createElement("p");
+           //used to set attribute
+           newPara.setAttribute("id","child4");
+
+           //assign data to child element 
+            newPara.innerText="This is new element created from js";
+            parent.appendChild(newPara);
+
+            let ullist = document.getElementById("ullist");
+            let newLi = document.createElement("li");
+            newLi.innerText="Grapes";
+            ullist.appendChild(newLi);
+            
+            let fruits = ["Apple","Mango","Grapes","Banana","Chiku","Orange","Watermelon"];
+            let newFruits = document.getElementById("fruit")
+            fruits.forEach(
+                fruitList=>{
+                    let newFruits= document.createElement("li");
+                    newFruits.innerText=fruitList;
+                    fruit.appendChild(newFruits);
+                }
+            )
+
+
+
+    </script>
+</body>
+</html>

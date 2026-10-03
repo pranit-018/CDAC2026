@@ -1,0 +1,70 @@
+*Typescript:
+-it is superset of javascript.
+-it is strictly typed language.
+-is is compiled language.
+-it is developed and maintain by microsoft
+-to overcome the loopwholes of javascript
+-we create typescript file by writting file name
+
+
+#how to run ts file.
+-tsc filename.ts    //it compile ts file and generate paln text js file
+-node fileName.js   //to run js file
+
+
+#how to declare variables in ts .
+-let variableName:datatype;
+eg let name:String
+
+
+#OOPS:
+1. class
+
+
+#this keyword
+-it acts like owner of the class
+-by using this keyword we can assess class data member inside it.
+
+2. Object: 
+    - it is instance of class
+    - it allow us to access class data member and member function outside the class.
+  -syntax = let stdObje = new Student();
+
+*get and set method:
+
+
+#Interface 
+- it is an signature of class.
+- it contains the abstract methods and final fields (variables) only
+- to implement Interface child class has to provide the implementation for methods
+
+-to create Interface we have 'interface' keyword.
+-to implement interface with child class we use "implement" keyword
+
+#Promises:
+-it is a one js Object which links two code producing code and consuming code 
+1 producing code : it take some time execute.
+
+2 consuming code: -it will wait for producing code to generate response.
+
+-it has three states :
+1. pending: in process.
+2. fulfield: completed
+3.Reject: failed
+-used to handle the asynchron
+
+
+#Async and sync
+
+-Async makes function return Promises
+-Await makes function wait for a Promises.
+-await we always use inside asynch function.
+-
+
+then  ==> async 
+catch ==> response/Reject.
+
+
+#how to create json database.
+#how to create json server
+-npm install -g json-server

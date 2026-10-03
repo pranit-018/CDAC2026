@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <p id="id1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quae id omnis fugiat atque nam voluptatum veniam cum vitae voluptate, autem similique, sint suscipit placeat earum, consequuntur distinctio adipisci veritatis.
+    </p>
+    <img class="cls1" src="../Assets/vadapav.jpeg" alt="vadapaw">
+    <script>
+        $(document).ready(function(){
+            $("#id1").mouseenter(function(){
+                $(this).css({"color":"Blue","background-color":"aqua","font-size":"20px"});
+            });
+            $("#id1").mouseleave(function(){
+                $(this).css({"color":"red","background-color":"lightgray","font-size":"18px"});
+            });
+            $(".cls1").mouseenter(function(){
+                $(this).css({"height":"300px","width":"200px","border-radius":"50%"});
+            });
+            $(".cls1").mouseleave(function(){
+                $(this).css({"height":"300px","width":"200px","border-radius":"0%"});
+            });
+        });
+    </script>
+</body>
+</html>

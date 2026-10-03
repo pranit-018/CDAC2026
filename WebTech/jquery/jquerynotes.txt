@@ -1,0 +1,35 @@
+jquery: 
+-jquery is a js  libray which is used to write the code more easy
+-which simplify javascript code 
+-it is used to learn 
+
+*how to use jquery
+-there are two ways to use it 
+1.By Using cdn Link (Internet iss Mandatory)
+2.by downloading
+
+*syntax:
+$(selector).action()
+
+*selector: it is used to select an element
+-element name:<div>,<p>
+-id select(#) :
+-class select(.) :
+-this selector(this):
+
+*structure of jquery program
+$(document).action(function(){           //$ = indicates preprocessor
+    jquery code
+});
+
+
+*what is document ready event:
+-document ready event prevent any JQuery code from running before the docuument is finsih loading
+-it is good practice to wait for the document to be fully loaded and ready before working with it 
+
+JQuery annimation :
+-to perform in jquery  first we havr to  change position property and make it  , position:relative.
+Syntax : $(selector).action(functionn(){
+    $(selector).animate(css prop)
+})
+

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="myform" onsubmit="return checkAll()">
+        <label for="">Enter your name: </label>
+        <input type="text" name="fname" id="inp1"> <br><br>
+        <label for="">Enter your email: </label>
+        <input type="text" name="email" id="inp2"> <br><br>
+
+        <label for="">Select your Qualification: </label><br>
+        <input type="checkbox" name="edu" value="SSC"> SSC<br><br>
+        <input type="checkbox" name="edu" value="HSC"> HSC<br><br>
+        <input type="checkbox" name="edu" value="UG"> UG<br><br>
+        <input type="checkbox" name="edu" value="PG"> PG<br><br>
+
+         <label for="">Select your Course: </label><br>
+         <select name="course" >
+            <option value="">select your course</option>
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="js">JavaScript</option>
+         </select>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <script src="form1.js"></script>
+</body>
+</html>

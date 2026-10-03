@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    
+
+    <script>
+        // object data type
+        let student = {
+            id:1,
+            name:"Pranit",
+            contact:5765432,
+            single:true,
+            address:{
+                city:"pune",
+                state:"Maharashtra",
+                pin:4444452
+            },
+
+            details:function() {
+                return `Id:${this.id} Name:${this.contact} single: ${this.single}`
+            }
+
+            
+        }
+         document.write("Id: " + student.id + "Name: " + student.name + " contact: " + student.contact + " Single: "+ student.single + "<br>");
+
+        //template lateral 
+        document.write(`Id:${student.id} Name: ${student.name} Contact: ${student.contact}Single:${student.single} <br>`);
+
+        document.write(student.details(),"<br><br><br>");
+
+        let emp=[
+            {id:1 , name:"Ramesh",post:"Developer",salary:85000},
+            {id:1 , name:"Radh",post:"HR",salary:65000},
+            {id:1 , name:"Gopal",post:"CEO",salary:185000},
+            {id:1 , name:"Rani",post:"Manager",salary:95000}
+        ]
+
+        for(let c of emp)
+        {
+            document.write(`Id:${c.id}<br> Name: ${c.name}<br> Contact: ${c.post} <br> Single:${c.salary} <br><br><br>`);
+        }
+
+        document.write("<br>=====================================================<br>");
+
+    //convert object data into json
+        let jsondata = JSON.stringify(student);
+        document.write(jsondata);
+        
+         document.write("<br>===============================================<br>");
+         
+        //  convert json data to js object
+        let objData = JSON.parse(jsondata);
+        document.write(objData);
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        .box{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f2f5;
+            margin: 0;
+        }
+
+        /* Container for the human figure */
+        .human {
+            position: relative;
+            width: 150px;
+            height: 350px;
+        }
+
+        /* Head (Circle) */
+        .head {
+            position: absolute;
+            top: 0;
+            left: 45px;
+            width: 60px;
+            height: 60px;
+            background-color: #333;
+            border-radius: 50%;
+        }
+
+        /* Torso / Body (Rectangle) */
+        .torso {
+            position: absolute;
+            top: 68px;
+            left: 52px;
+            width: 46px;
+            height: 110px;
+            background-color: #007bff;
+            border-radius: 8px;
+        }
+
+        /* Left Arm */
+        .arm-left {
+            position: absolute;
+            top: 72px;
+            left: 12px;
+            width: 36px;
+            height: 14px;
+            background-color: #333;
+            border-radius: 7px;
+            transform: rotate(20deg);
+        }
+
+        /* Right Arm */
+        .arm-right {
+            position: absolute;
+            top: 72px;
+            left: 102px;
+            width: 36px;
+            height: 14px;
+            background-color: #333;
+            border-radius: 7px;
+            transform: rotate(-20deg);
+        }
+
+        /* Left Leg */
+        .leg-left {
+            position: absolute;
+            top: 175px;
+            left: 56px;
+            width: 16px;
+            height: 110px;
+            background-color: #333;
+            border-radius: 6px;
+        }
+
+        /* Right Leg */
+        .leg-right {
+            position: absolute;
+            top: 175px;
+            left: 78px;
+            width: 16px;
+            height: 110px;
+            background-color: #333;
+            border-radius: 6px;
+        }
+
+        
+    </style>
+</head>
+<body>
+
+    <div class="box">Bhag Anish Bhag</div>
+    
+    <script>
+        $(document).ready(function(){
+            $(".box").click(function(){
+                $(this).animate({"left":"400px","border-radius":"25%"},10000)
+            })
+        })
+    </script>
+</body>
+</html>
+
+

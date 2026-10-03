@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="d1"></h1>
+    <h2 >Counter: <span id="d2"></span></h2>
+
+    <script>
+        function greeting(){
+            document.getElementById("d1").innerHTML="Good morning students.";
+
+        }
+
+        setTimeout(greeting,2000);
+        let count =0;
+        function counter()
+        {
+            count+=1;
+            document.getElementById("d2").innerHTML=count;
+        }
+        setInterval(counter,1000);
+        
+    </script>
+</body>
+</html>

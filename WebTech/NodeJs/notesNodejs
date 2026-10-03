@@ -1,0 +1,4 @@
+npm init -y
+npm i chalk
+npm i validator
+npm i prompt.

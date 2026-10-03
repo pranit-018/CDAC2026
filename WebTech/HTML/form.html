@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form >
+
+        <label for="">Enter Your Name:   </label>
+        <input type="text" name="fname" id="txt1" pattern="^[a-zA-Z]{2,20}$" minlength="2" maxlength="20" placeholder="name">
+
+        <br><br>
+        <label for="">Enter your Password:</label>
+
+        <input type="password" name="pass" id="pass1" minlength="6" maxlength="16" pattern="^(?=.*[0-9])(?=.*[!@#$%^&*]){6,16}$">
+        <br><br>
+
+        <label for="">Enter your email:</label>
+        <input type="email" name="uemail" required> <br>
+        
+        <label for="">Enter your contact :</label>
+        <input type="number" name="ucontcat" id="" pattern="^[0-9]{10,11}$" minlength="10" maxlength="11" required>
+        <br>
+        
+        <label for="">Enter you DOB:</label>
+        <input type="date" name="udob" required>
+        <br>
+
+        <label for="">Select Your Gender:</label>
+        <input type="radio" name="gen" value="male">Male 
+        <input type="radio" name="gen" value="female">Female
+        <input type="radio" name="gen" value="other">Other
+        <br><br>
+        <label for="">Select your Qualification</label>
+        <input type="checkbox" name="edu" value="SSC">SSC
+        <input type="checkbox" name="edu" value="HSC">HSC
+        <input type="checkbox" name="edu" value="UG">UG
+        <input type="checkbox" name="edu" value="PG">PG
+
+        <br>
+
+        <label for="" >select your course</label>
+        <select name="course">
+            <option value="react">React</option>
+            <option value="angular">Angular</option>
+            <option value="java">Java</option>
+            <option value="python">Python</option>
+        </select>
+        <br>
+        <label for="">fees:</label>
+        <input type="number" name="fees" value="15000" disabled>
+        <br>
+        color:<input type="color" name="" id=""> <br>
+        Date Time: <input type="datetime-local" name="" id=""><br>
+        Time:<input type="time" name="" id="" > <br>
+        week: <input type="week" name="" id="">
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+
+    </form>
+</body>
+</html>

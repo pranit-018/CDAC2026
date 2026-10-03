@@ -1,0 +1,33 @@
+30/09/26
+
+step1: create package.json file
+npm init -y or npm init 
+
+step2: install expresjs 
+npm i express 
+
+step3: install dotenv library (optional -->this are library used in the project)
+ npm i dotenv --save
+
+ step4:create .env file and access 
+
+
+ step5:
+ create database with table in xampp.
+ install mysql library in node application
+ npm i  mysql
+
+ step7: write connection string in application
+ step8: make get request or query for getting users detais.
+ step9: make delte request for deleting single users.
+ step10: bodyparser middle : it allow us to insert urlencoded and json json in post request.
+ //body-parser.
+ npm i body-parser
+ (used as middleware) important.
+
+ app.use()
+
+
+ setp11:
+ install cors libray
+ npm i cors

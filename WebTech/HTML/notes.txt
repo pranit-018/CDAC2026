@@ -1,0 +1,74 @@
+*list int html
+there are 3 types of list
+ordered list --> <ol>  --> 1,2,3 A,B,C a,b,c I,II,III..
+Unordered list --> <ul> -->disc square,circle,none
+Description list --> <dl>
+        dt = define term
+        dd = define Description
+
+#how to create link
+we can create link using anchor tag
+-used to navigate from one web page to another webpage
+-
+
+====================================================================================================
+#form 
+
+
+
+1 get method
+    -when we have to submit non confidential data.
+    -submitted data will visible in browser url
+    -in browser url there character that is 1024 character
+
+2  post method
+        -when we have to submit confidential data.
+        -submitted data will not be visible in browser url
+        -there is no character limit.
+
+Label:
+        -it provide hint to user what data or information need to insert into input control
+Input:
+        -allow user to enter data in it.
+checkBox:
+        -allow user to select multiple option among given.
+Radio button:
+        -allow user to select single option among given.
+
+#Button Types: there is 4 button types
+
+1) Button: Act as normal button
+2) Submit: use to submit forms data
+3) Reset:  use to reset the form data
+4) Menu:   use to create menu button
+
+
+Q. what is difference between HTML and HTML5
+
+        1. symantic element introduce in HTML5
+        2. new tags , new attribute and new input type are introduce
+           eg.new attribute= minlength , maxlength, pattern,min , max
+           new inputtypes = email , tel, password, number, date, time , week
+           new tag : em, strong, ins, abbr, tbody , thead,address.
+
+        3. multimedia elements introduce
+                support audio and video
+        4. API introduce in HTML5
+                - it is a small program which is already present which we can use directly 
+                -1 Geolocation: it return user current location
+                                -to use this api in your device GPS must be present.
+                -2 Drag and Drop: it allow user to grab an object from one location and drag to another location (like cut past)
+                -3 Web-Worker: it small js code which execute in the backend of browser without affecting its current execution
+                -4 WebStorage: it used to store user data on browser 
+                         there are two type of WebStorage
+                         1 local storage :
+                                        -used to store user data permanently.
+                         2 session storage:
+                                        -used to store user data for limited time.
+                -5 SSE(server sent event):
+                                -allow user to get automatic update from the server.
+
+          eg. <canvas> and SVG support
+Q. what are the features of HTML5
+        symantic element = element which has a specific meaning 
+        eg. header footer, section , aside, nav, address

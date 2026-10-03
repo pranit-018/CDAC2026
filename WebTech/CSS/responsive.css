@@ -1,0 +1,49 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	margin: 0px;
+}
+.circle{
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	text-align: center;
+	margin: auto;
+	background-color: burlywood;
+	transition: 5s transform;
+}
+.circle:hover{
+	background-color: aquamarine;
+	transform: rotateY(350deg);
+	transform: scaleX();
+}
+.a{
+	float: left;
+	height: 150px;
+	border: 2px solid black;
+	width: 20%;
+	border-radius: 6px;
+	text-align: center;
+	background-color: rgb(215, 167, 22);
+}
+@media screen and (max-width:992px) {
+	.a{
+		width: 25%;
+	}
+}
+@media screen and (max-width:768px) {
+	.a{
+		width: 33.33%;
+	}
+}
+@media screen and (max-width:558px) {
+	.a{
+		width: 50%;
+	}
+}
+@media screen and (max-width:400px) {
+	.a{
+		width: 100%;
+	}
+}

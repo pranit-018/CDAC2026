@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+<center>
+    <img id="img1" src="../Assets/dosa.jpeg" alt="Dosa"><br>
+
+
+    
+    <button type="button" id="btnhide">Hide</button>
+    <button type="button" id="btnshow">Show</button>
+    <button type="button" id="btntoggle">Toggle</button>
+    <hr>
+    <center>
+        <img id="img2" src="../Assets/Jelebi.jpeg" alt="jalebi">
+        <h1></h1>
+    </center>
+</center>
+    <script>
+        $(document).ready(function(){
+            $("#btnhide").click(()=>{$('#img1').hide(2000)});
+            $("#btnshow").click(()=>{$('#img1').show(2000)});
+            $("#btntoggle").click(()=>{$('#img1').toggle(2000)});
+
+            $("#img2").dblclick(function(){
+                $(this).hide(2000,window.alert("image hide successfully"));
+            })
+        })
+    </script>
+</body>
+</html>

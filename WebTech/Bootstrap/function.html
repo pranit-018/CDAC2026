@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+
+
+
+    <script>
+        //1 default function
+        function greeting(){
+            console.log("Welcome to the js world");
+        }
+        greeting(); //call to the function.
+
+        //2. parameterize function
+        function welcome(std1,std2){
+            return "Hello" + std1 + std2;
+        }
+
+        welcome("Pranit "," Virat");
+
+        //3. anonymous function:function without name introduce in ES6 feature
+
+        let fun = function (num1,num2){
+            console.log("this is anonymous function");
+            return num1 + num2;
+        }
+        fun(20,30);
+
+        //4. arrow function: which has no name and no function keyword 
+        // eg. let sub = (num1,num2) =>{
+        //     return num1-num2;
+        // }
+
+        let sub = (num1,num2) => num1-num2;
+        console.log(sub(50,30));
+
+        // 5. optional parameterize function: in this no need to pass parameter value, optional parameter always at last.
+        let fullName = (fname,lname,mname="",contact="") =>{
+            return fname + lname + mname + contact;
+        }
+        console.log(fullName("Pranit ", "Vane "));
+        console.log(fullName("Pranit ", "Vane "));
+        console.log(fullName("Pranit ", "Vane ", "S. "));
+        console.log(fullName("Pranit ", "Vane ","S. " , "23435613"));
+
+
+        // 6. rest parameterize function: when we don't  know how many parameter required to . in this we use spread operator(...), it store data in array format.
+        let stdList = (...std)=>{
+            return std;
+        }
+        console.log(stdList("Sanket","Suraj","Sahil","Shubham"));
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .block{
+            border: 5px solid black;
+            width: 320px;
+            text-align: center;
+            padding: 7px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="block">
+        <img id="img1" src="../Assets/dosa.jpeg" alt="Dosa" height="300px" width="300px"> <br>
+        <h2 id="h1">Dosa</h2>
+        <button type="button" onclick="toggleImage()">Toggle Image</button>
+
+    </div>
+
+
+
+
+    <script>
+
+        let cond = false;
+        function toggleImage()
+        {
+            cond = !cond;
+           if(cond)
+           {
+             document.getElementById("img1").src="../Assets/pizza.jpg"
+             document.getElementById("h1").innerHTML="Pizza"
+           }
+           else{
+             document.getElementById("img1").src="../Assets/dosa.jpeg"
+             document.getElementById("h1").innerHTML="Dosa"
+
+           }
+
+        }
+
+
+
+    </script>
+</body>
+</html>

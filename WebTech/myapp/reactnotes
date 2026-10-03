@@ -1,0 +1,27 @@
+React:
+    -it is javascript library.
+    -it is mainly used for creating rich user interface.
+    -it create single page application(SPA).
+    -it wrok on component basis.
+    -react develop and maintain by meta(Facebook).
+    -latest version of react is react-18.
+
+   ?Note:Nodejs must be install for all on the below.
+    **Three ways to create react project..
+        -1. by using npm : need to install configuration file first.
+                npm install -g create-react-app
+                create-react-app projectname
+                cd projectname
+                npm start.
+        -2. by using npx: no nedd to install configuration file.
+                npx create-react-app projectname.
+                cd projectname.
+                npm start.
+        -3. by using vite: it create react project with minimum requirement.
+
+
+Q>How to get output of react project.
+    -first we have to write 'npm start' command . then it will display react project output on browser with localhost:3000 port number.
+    localhost is a server . for react it is provided by the nodejs
+
+    

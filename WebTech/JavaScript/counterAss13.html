@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h2 >Counter: <span id="d2"></span></h2><br>
+
+    <button type="button" onclick=IncCounter()>Increment</button>
+    <button type="button" onclick=DecCounter()>Decrement</button>
+    <button type="button" onclick=resetCounter()>Reset</button>
+
+
+
+    <script>
+        
+        let count =0;
+        
+        function IncCounter()
+        {
+
+            count+=1;
+            document.getElementById("d2").innerHTML=count;
+            
+        }
+         function DecCounter()
+        {
+            count-=1;
+            document.getElementById("d2").innerHTML=count;
+        }
+         function resetCounter()
+        {
+            count=0;
+            document.getElementById("d2").innerHTML=count;
+        }
+        setInterval(counter,1000);
+    </script>
+</body>
+</html>

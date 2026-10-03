@@ -1,0 +1,21 @@
+#variables in JS
+-it is used to store data .
+-store data can be change any time.
+-in js to declare a variables we can use var,let , const keywords.
+
+----var:
+    - it create function scope variable.
+    -we can use variable before declaration of it.
+    -we can perform re-declaration of variable.
+
+
+-----let:
+    -it creates block scope variables 
+    -we cannot perform pre declaration of variable.
+    -we cannot use before declaration.
+
+----const:
+    -it creates constant variable who's value can not change at runtime
+    -at the time variable declaration we  must have to initialize it.
+
+  
